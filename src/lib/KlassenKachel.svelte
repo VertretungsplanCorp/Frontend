@@ -4,25 +4,29 @@
   let { dati, klasse, stufe } = $props();
 
   function getRandomVibrantColor() {
+      console.log(stufe);
+      let rand = 1/Math.pow(stufe, 2)*1000
+      console.log(rand);
+
       // Hue: 0-360 (full color spectrum)
-      const hue = Math.floor(Math.random() * 360);
+      const hue = Math.floor(rand * 360);
 
       // Saturation: high for vibrant colors (e.g., 80-100%)
-      const saturation = Math.floor(Math.random() * 20) + 80;
+      const saturation = 80;
 
       // Lightness: medium range for vibrancy (e.g., 40-60%)
-      const lightness = Math.floor(Math.random() * 20) + 40;
+      const lightness = 50;
 
       // Return as HSL string
       return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
   }
 
   let color = getRandomVibrantColor();
+  console.log(color);
 
-  document.documentElement.style.setProperty('--color', color);
 </script>
 
-<div class="kachel">
+<div class="kachel" style="--color: {color}">
     <div class="klasse container">
       <div class="klasse schild">{stufe}{klasse}</div>
     </div>
