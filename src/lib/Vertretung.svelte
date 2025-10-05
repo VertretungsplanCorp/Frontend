@@ -50,7 +50,6 @@
         border-width: 0.1rem;
         color: black;
         border-color: var(--color);
-        font-size: 0.75rem;
         border-style: solid;
         border-bottom: none;
         border-top: none;
@@ -65,6 +64,7 @@
         border-width: 0.15rem;
         border-color: var(--color);
         border-style: solid;
+        /* height: 100%; */
     }
 
     table.ausfall {

@@ -19,5 +19,6 @@
   table {
       margin: 0.5rem;
       flex-grow: 1;
+      height: 100%;
   }
 </style>

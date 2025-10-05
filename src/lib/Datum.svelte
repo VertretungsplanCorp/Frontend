@@ -31,6 +31,8 @@
       border-color: var(--color);
       border-style: solid;
       margin: 0.5rem;
+      flex-grow: 1;
+      width: 100%;
     }
     .datum_container {
         position: relative;

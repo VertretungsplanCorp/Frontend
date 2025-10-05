@@ -39,9 +39,8 @@
 
 <style>
     .kachel {
-      margin: 0.5rem;
-      height: fit-content;
-      width: 10rem;
+      height: max-content;
+      margin: 1rem;
     }
 
     .content.container {
@@ -64,9 +63,10 @@
       width: 3rem;
       height: 3rem;
       line-height: 3rem;
-      font-size: 1.5rem;
+      font-size: 1em;
       border-radius: 50%;
       background-color: white;
+      font-weight: bold;
       border-color: var(--color);
       color: var(--color);
       text-align: center;
@@ -75,6 +75,9 @@
     }
     
     .klasse.container {
+      border-style: solid;
+      border-color: yellow;
+      border-width: 0.3rem;
       height: 0;
       width: 0;
       position: relative;
